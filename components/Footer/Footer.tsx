@@ -10,7 +10,7 @@ export default function Footer() {
         </p>
 
         <div className={css.wrap}>
-          <p>Tetiana Tulska</p>
+          <p>Developer: Tetiana Tulska</p>
 
           <p>
             Contact us:{" "}
