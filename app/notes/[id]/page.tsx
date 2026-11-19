@@ -13,12 +13,10 @@ export default async function NoteDetailsPage({ params }: Props) {
   const { id } = await params;
   const queryClient = getQueryClient();
 
-  await queryClient
-    .query({
-      queryKey: ["note", id],
-      queryFn: () => fetchNoteById(id),
-    })
-    .catch(() => undefined);
+  await queryClient.prefetchQuery({
+    queryKey: ["note", id],
+    queryFn: () => fetchNoteById(id),
+  });
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
