@@ -18,7 +18,7 @@ import {
 import {
   createNote,
   type CreateNotePayload,
-} from "@/lib/api/api";
+} from "@/lib/api";
 
 import type { NoteTag } from "@/types/note";
 

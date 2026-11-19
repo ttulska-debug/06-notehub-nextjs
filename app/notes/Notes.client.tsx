@@ -9,7 +9,7 @@ import {
 
 import { useDebouncedCallback } from "use-debounce";
 
-import { fetchNotes } from "@/lib/api/api";
+import { fetchNotes } from "@/lib/api";
 
 import NoteList from "@/components/NoteList/NoteList";
 import Modal from "@/components/Modal/Modal";
